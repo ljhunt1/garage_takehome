@@ -1,0 +1,21 @@
+{
+  "folders": [
+    {
+      "path": ".",
+    },
+  ],
+  "settings": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+    },
+    "editor.formatOnSave": true,
+    "eslint.enable": true,
+    "javascript.preferences.importModuleSpecifier": "non-relative",
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+  },
+  "extensions": {
+    "recommendations": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"],
+  },
+}
+

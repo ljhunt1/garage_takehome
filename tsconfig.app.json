@@ -1,0 +1,29 @@
+// tsconfig for the main application (which will run in the browser). consumed by vite
+// when running the devserver or bundling
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "esModuleInterop": true, // recommended by msft https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-7.html#support-for-import-d-from-cjs-from-commonjs-modules-with---esmoduleinterop
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+    // Allows imports like 'foo/bar' instead of '../../foo/bar' or './foo/bar'
+    // Affects `tcs -b` and VSCode tooling by default. Affects vite due to plugin `vite-tsconfig-paths
+    "baseUrl": "./src",
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "exactOptionalPropertyTypes": true
+  },
+  "include": ["src"]
+}
