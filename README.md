@@ -1,5 +1,7 @@
 ### Notes
 * Most of the scaffolding (eslint setup, prettier setup, vite configs, etc.) are copied from another project I worked on recently, for expediency
+* Clientside rendered react app, bundled using [vite](https://vite.dev/)
+* Uses [MaterialUI](https://mui.com/material-ui/all-components/) for styled components
 
 ### Local Setup
 - Recommended: open in VSCode from the `.code-workspace` file and install the recommended plugins. This gets nice format on save, in-IDE linting, etc.
