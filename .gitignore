@@ -36,3 +36,7 @@ dist-ssr
 # cert for https local devserver
 server.crt
 server.key
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
