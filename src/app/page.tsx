@@ -1,7 +1,9 @@
+'use client';
+
 import { Button, TextField } from '@mui/material';
 import { useState } from 'react';
 
-export const App = () => {
+export default function Home() {
   // Keeping all state as useStates in the top-level component for now.
   // If this scaled we'd want something more sophisticated
   const [urlTextField, setUrlTextField] = useState<string>('');
@@ -27,4 +29,5 @@ export const App = () => {
       </div>
     </div>
   );
-};
+}
+
